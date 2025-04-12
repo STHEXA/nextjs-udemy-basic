@@ -8,6 +8,7 @@ const articles = [
 //３秒待機
 async function fetchArticles() {
   await new Promise((resolve) => setTimeout(resolve, 3000));
+  // throw new Error("エラー発生");
   return articles;
 }
 
