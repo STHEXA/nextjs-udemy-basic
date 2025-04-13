@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ClientComponent from "../rcc/page";
 
 export default function ServerComponent() {
@@ -6,6 +7,7 @@ export default function ServerComponent() {
     <div>
       サーバー
       <ClientComponent />
+      <Link href="/about">About</Link>
     </div>
   );
 }
